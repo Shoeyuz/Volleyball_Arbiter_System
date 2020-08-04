@@ -1,8 +1,8 @@
 <?php
     $servername = "localhost";
-    $username = "michael";
-    $password = "root";
-    $db = "arbiter_system";
+    $username = "------";
+    $password = "----";
+    $db = "----";
     // Create connection
     $conn = mysqli_connect($servername, $username, $password,$db);
     // Check connection
