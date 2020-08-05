@@ -1,2 +1,2 @@
 # Volleyball_Arbiter_System
-An applet that is used for the purpose of issuing assignments to referees and keeping track of all the games available
+A website made with a purpose to keep track of referee assignments, create new ones, and showcase upcoming ones. Allows referees to view games they have had, or coming up. Shows the league rules ensuring proper following.
