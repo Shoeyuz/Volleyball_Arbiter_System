@@ -87,7 +87,7 @@
         Assignment List
       </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item" href = "rules.php">
         League Rules
       </a>
 
