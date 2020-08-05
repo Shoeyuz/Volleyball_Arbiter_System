@@ -1,4 +1,11 @@
 <?php
+
+    //gets all the error reporting, comment out when live
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    //
+
+    
     $servername = "localhost";
     $username = "michael";
     $password = "root";
@@ -9,7 +16,7 @@
     if (!$conn) {
        die("Connection failed: " . mysqli_connect_error());
     }
-    echo "Connected successfully";
+    echo "Connectedh successfully";
 
 
     //---------------------------------------------------
@@ -21,14 +28,14 @@
     //query for all games
    
     $sql = "SELECT id, place, timing, tournament, gender
-    FROM `arbiter_system.Games` ORDER BY id";
+    FROM Games ORDER BY id";
     
 
     //make querry and get result
-    $result = mysqli_querry($conn,$sql);
+    $result = mysqli_query($conn,$sql);
 
     //fetch the rows
-    $assignments = mysqli_fetch_all($result, MYSQLI_ASSSOC);
+    $assignments = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
     //free and clear memory with connection
     mysqli_free_result($result);    
