@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-header{
+    background-color: aliceblue;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
+
+.navbar{
+    margin-bottom: 2rem;
+}

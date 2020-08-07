@@ -63,8 +63,8 @@
     <title>Assignments</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <script src="/Volleyball_Arbiter_System/js/main.js"></script> 
     <link rel="stylesheet" href = "/Volleyball_Arbiter_System/css/main.css">
+    <script src="/Volleyball_Arbiter_System/js/main.js"></script> 
   </head>
 
  <!-- NAVIGATION -->
@@ -81,7 +81,7 @@
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item" href = main.php>
         Assignment List
@@ -150,33 +150,33 @@
                 </p>
                 
             </header>
-        <div class="card-content">
-            <div class="content">
-                <?php 
-                    if($assignment['gender'])
-                        echo ("Girls ");
-                    else
-                        echo ("Boys ");
+          <div class="card-content">
+              <div class="content">
+                  <?php 
+                      if($assignment['gender'])
+                          echo ("Girls ");
+                      else
+                          echo ("Boys ");
 
-                    if($assignment['age'])
-                        echo ("Senior ");
-                    else
-                        echo ("Junior ");
-                ?>
-                <br>
-                <?php 
-                    if($assignment['tournament'])
-                        echo ("Tournament ");
-                    else
-                        echo ("Game ");
-                ?>
-                <br>
-                <time datetime="2016-1-1"><?php echo htmlspecialchars($assignment['timing']);?></time>
-            </div>
-        </div>
-        <footer class="card-footer">
-            <a href="#" id="request" class="card-footer-item">Request Assignment</a>
-        </footer>
+                      if($assignment['age'])
+                          echo ("Senior ");
+                      else
+                          echo ("Junior ");
+                  ?>
+                  <br>
+                  <?php 
+                      if($assignment['tournament'])
+                          echo ("Tournament ");
+                      else
+                          echo ("Game ");
+                  ?>
+                  <br>
+                  <time datetime="2016-1-1"><?php echo htmlspecialchars($assignment['timing']);?></time>
+              </div>
+          </div>
+          <footer class="card-footer">
+              <a href="#" id="request" class="card-footer-item">Request Assignment</a>
+          </footer>
         </div>
 
     <?php }?>
