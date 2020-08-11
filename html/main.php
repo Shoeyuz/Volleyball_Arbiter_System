@@ -136,13 +136,17 @@
 
 
 
-  <body>
+<body>
+
+
 
  <!-- CARDS SHOWING -->
   <section class = "games">
 
     <?php foreach($assignments as $assignment){ ?>
-        <div class="card">
+        <div class="card" id = <?php echo $assignment['id'] ?>>
+        <!-- this sets the id of the div to the game id -->
+        
             <header class="card-header">
                 <p class="card-header-title">
                 <?php echo htmlspecialchars($assignment['place']);?>
@@ -177,6 +181,23 @@
           <footer class="card-footer">
               <a href="#" id="request" class="card-footer-item">Request Assignment</a>
           </footer>
+          <!-- MODAL -->
+          <div class="modal" id="assignment-application">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <!-- Content ... -->
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="button">Cancel</button>
+              </footer>
+            </div>
+          </div>
         </div>
 
     <?php }?>
